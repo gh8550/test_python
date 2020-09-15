@@ -1,16 +1,4 @@
-# f = open("준호.txt", 'w', encoding='utf-8')
-# for i in range(1, 11):
-#     data = "%d번째 줄입니다.\n" % i
-#     f.write(data)
-# f.close()
-
-# f = open("준호.txt", 'r',encoding='utf-8')
-# lines = f.readlines()
-# for line in lines:
-#     print(line)
-# f.close()
-
-
+# 내가 처음에 한거!
 # x = '''------------------------
 # 1. 종료
 # 2. 선택

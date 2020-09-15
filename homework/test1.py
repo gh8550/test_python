@@ -109,8 +109,3 @@ for a,b temp:
 #         break
 
 
-
-#Q1
-# 결과값: shirt need
-
-
