@@ -938,7 +938,7 @@
 #     for ho in floor:
 #         print(ho, "호")
 
-#186
+# 186
 # apart = [ [101, 102], [201, 202], [301, 302] ]
 # apart.reverse()
 # for floor in apart:
