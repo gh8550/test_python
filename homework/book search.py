@@ -43,7 +43,7 @@
 
 
 
-
+#선생님이 도와준것
 # import sys
 #
 # def menuUI():
@@ -101,8 +101,6 @@
 #         # 1.종료
 #         if number == 1:
 #             exitProgram()
-
-
 
 
 # def inputData():

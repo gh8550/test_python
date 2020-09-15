@@ -1,4 +1,4 @@
-#0908
+#2020.09.08.
 # def add_many(*args):
 #     result = 0
 #     print(type(args))
@@ -136,7 +136,7 @@ print(say())'''
 # f.close()
 
 
-#09
+#202009
 # f = open("준호.txt", 'w', encoding='utf-8')
 # for i in range(1, 11):
 #     data = "%d번째 줄입니다.\n" % i
@@ -150,7 +150,7 @@ print(say())'''
 # f.close()
 
 
-
+#202009
 # class cookieBox: # 과자 틀
 #     def __init__(self, name): #생성자, 초기화 함수
 #         print(name, '과자가 만들어 졌습니다.')
@@ -191,6 +191,49 @@ print(say())'''
 # if __name__=='__main__':
 
 
+# class FourCal:
+#     def setdata(self, first, second):
+#         self.first = first
+#         self.second = second
+#     def add(self):
+#         result = self.first + self.second
+#         return result
+#     def mul(self):
+#         result = self.first * self.second
+#         return result
+#     def sub(self):
+#         result = self.first - self.second
+#         return result
+#     def div(self):
+#         result = self.first / self.second
+#         return result
+#
+# if __name__=='__main__':
+#     cal = FourCal()
+#     cal.setdata(3,4)
+#     print(cal.div())
+
+#2020.09.15.
+# a = FourCal()
+# a.setdata(4,2)
+# print(a.add())
+
+# class FourCal:
+#     def setdata(self, first, second):
+#         self.first = first
+#         self.second = second
+#
+#
+# a = FourCal()
+# b = FourCal()
+#
+# a.setdata(4,2)
+# print(a.first)
+#
+# b.setdata(3,7)
+# print(b.first)
+# print(a.first)
+
 class FourCal:
     def setdata(self, first, second):
         self.first = first
@@ -199,7 +242,7 @@ class FourCal:
         result = self.first + self.second
         return result
     def mul(self):
-        result = self.first * self.second
+        result = self.first*self.second
         return result
     def sub(self):
         result = self.first - self.second
@@ -208,7 +251,13 @@ class FourCal:
         result = self.first / self.second
         return result
 
-if __name__=='__main__':
-    cal = FourCal()
-    cal.setdata(3,4)
-    print(cal.div())
+a = FourCal()
+b = FourCal()
+a.setdata(4,2)
+b.setdata(3,8)
+
+print(a.add())
+print(b.sub())
+
+
+
