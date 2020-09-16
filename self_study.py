@@ -234,6 +234,25 @@ print(say())'''
 # print(b.first)
 # print(a.first)
 
+
+# def inputData():
+#     a = int(input())
+#     b = int(input())
+#     return a, b
+#
+# def print_arithmetic_operation(a,b):
+#     print('%d + %d =' % (a,b), a+b)
+#     print('%d - %d =' % (a,b), a-b)
+#     print('%d * %d =' % (a,b), a*b)
+#     print('%d / %d =' % (a,b), a/b)
+#
+# if __name__=='__main__':
+#     c,d = inputData()
+#     print_arithmetic_operation(c,d)
+
+
+
+
 class FourCal:
     def setdata(self, first, second):
         self.first = first

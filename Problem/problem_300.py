@@ -945,4 +945,211 @@
 #     for ho in floor:
 #         print(ho, "호")
 
+#187
+# apart = [ [101, 102], [201, 202], [301, 302] ]
+# for i in [2,1,0]:
+#     print(apart[i][1],'호')
+#     print(apart[i][0],'호')
 
+# for i in apart[::-1]:
+#     for j in i[::-1]:
+#         print(j, '호')
+
+#188
+# apart = [ [101, 102], [201, 202], [301, 302] ]
+# for i in apart:
+#     for j in i:
+#         print(j, '호')
+#         print('----')
+
+#189
+# apart = [ [101, 102], [201, 202], [301, 302] ]
+# for i in apart:
+#     for j in i:
+#         print(j, '호')
+#     print('----')
+
+#190
+# apart = [ [101, 102], [201, 202], [301, 302] ]
+# for i in apart:
+#     for j in i:
+#         print(j, '호')
+# print('----')
+
+#191~200
+#191
+# data = [
+#     [ 2000,  3050,  2050,  1980],
+#     [ 7500,  2050,  2050,  1980],
+#     [15450, 15050, 15550, 14900]
+# ]
+# for i in [0,1,2]:
+#     for j in [0,1,2,3]:
+#         print(data[i][j]*1.00014)
+# for i in data:
+#     for j in i:
+#         print(j*1.00014)
+
+#192
+# data = [
+#     [ 2000,  3050,  2050,  1980],
+#     [ 7500,  2050,  2050,  1980],
+#     [15450, 15050, 15550, 14900]
+# ]
+# for i in data:
+#     for j in i:
+#         print(j*1.00014)
+#     print('----')
+
+#193
+# data = [
+#     [ 2000,  3050,  2050,  1980],
+#     [ 7500,  2050,  2050,  1980],
+#     [15450, 15050, 15550, 14900]
+# ]
+# a = []
+# for i in data:
+#     for j in i:
+#         a.append(j*1.00014)
+# print(a)
+
+#194
+# data = [
+#     [ 2000,  3050,  2050,  1980],
+#     [ 7500,  2050,  2050,  1980],
+#     [15450, 15050, 15550, 14900]
+# ]
+# for i in [0,1,2]:
+#     for j in [0,1,2,3]:
+#         data[i][j] = data[i][j]*1.00014
+# print(data)
+
+#195
+# ohlc = [["open", "high", "low", "close"],
+#         [100, 110, 70, 100],
+#         [200, 210, 180, 190],
+#         [300, 310, 300, 310]]
+# print(ohlc[1][3])
+# print(ohlc[2][3])
+# print(ohlc[3][3])
+
+# for i in [1,2,3]:
+#     print(ohlc[i][3])
+
+# for i in ohlc[1::]:
+#     print(i[3])
+
+#196
+# for i in ohlc[1::]:
+#     if i[3] > 150:
+#         print(i[3])
+
+#197
+# for i in ohlc[1::]:
+#     if i[3] >= i[0]:
+#         print(i[3])
+
+#198
+# volatility=[]
+# for i in ohlc[1::]:
+#     a = i[1]-i[2]
+#     volatility.append(a)
+# print(volatility)
+
+#199
+# volatility=[]
+# for i in ohlc[1::]:
+#     if i[3] > i[0]:
+#         a = i[1]-i[2]
+#         print(a)
+
+#200
+# total=0
+# for i in ohlc[1::]:
+#     profit = i[3]-i[0]
+#     total = total + profit
+# print(total)
+
+#201~210
+#201
+# def print_coin():
+#     print("비트코인")
+
+#202
+# print_coin()
+
+#203
+# for i in range(100):
+#     print_coin()
+
+#204
+# def print_coins():
+#     print("비트코인\n"*100)
+# print_coins()
+
+# def print_coins():
+#     for i in range(100):
+#         print("비트코인")
+# print_coins()
+
+#205
+#hello()가 정의되지 않음. 에러를 발생하지 않게 하려면 함수정의후에 사용하면 됨.
+
+#206~210
+#완료
+
+#211~220
+#211~215: 눈으로 품
+#215
+# def print_with_smile():
+#     a = str(input("하나의 문자를 입력하시오"))
+#     print(a + ":D")
+# print_with_smile()
+
+# def print_with_smile(a):
+#     print(a + ":D")
+#
+# #216
+# print_with_smile('안녕하세요')
+#
+# #217
+# def print_upper_price(a):
+#     print(a * 1.3)
+# print_upper_price(12444)
+#
+# #218
+# def print_sum(a,b):
+#     print(a+b)
+# print_sum(23,45)
+#
+# #219
+# def print_arithmetic_operation(a,b):
+#     print(a, '+', b, '=', a + b)
+#     print(a, '-', b, '=', a - b)
+#     print(a, '*', b, '=', a * b)
+#     print(a, '/', b, '=', a / b)
+#
+# print_arithmetic_operation(3,4)
+
+#220
+# def print_max(a,b,c):
+#     if a>b and a>c:
+#         print(a)
+#     elif b>a and b>c:
+#         print(b)
+#     else:
+#         print(c)
+# print_max(3,5,6)
+
+#221~230
+#221
+# def print_reverse(a):
+#     a.reverse()       # reverse는 리스트에 사용가능!
+#     print(a)
+# print_reverse("python")
+
+# def print_reverse(a):
+#     print(a[::-1])
+# print_reverse("python")
+
+print_score([1,2,3])
