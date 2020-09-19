@@ -55,11 +55,14 @@
 # #Q12
 # # b도 같을듯! [1,4,3] 될 것 같다.
 
+#04장
+#Q1
+def is_odd(a):
+    if a%2 == 0:
+        print("짝수입니다.")
+    else:
+        print("홀수입니다.")
+is_odd(14)
 
-a = 1
-def vartest():
-    global a
-    a = a+1
-
-vartest()
-print(a)
+#Q2
+input()

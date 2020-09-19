@@ -1152,4 +1152,264 @@
 #     print(a[::-1])
 # print_reverse("python")
 
-print_score([1,2,3])
+#222
+# def print_score(a):
+#     print(sum(a)/len(a))
+# print_score([1,2,3,5,2,7,9])
+
+#223
+# def print_even(a):
+#     for i in a:
+#         if i%2 == 0:
+#             print(i)
+# print_even([1,3,2,10,12,11,15])
+
+#224
+# def print_keys(a):
+#     for i in a.keys():
+#         print(i)
+# print_keys({"이름":"김말똥", "나이":30, "성별":0})
+
+
+
+#229
+# 왼쪽: 100
+# 오른쪽: 200
+
+#230
+# 왼쪽: 200
+# 오른쪽: 100
+
+#251~260
+#251
+#클래스: 기능을 하는 함수들의 모음
+#클래스로 찍어낸것이 객체
+#클래스로 만든 객체를 인스턴스
+#a=Cookie() 일 때, a는 객체, a는 Cookie의 인스턴스
+
+#252
+# class Human:
+#     pass
+
+#253
+# class Human:
+#     pass
+#
+# areum = Human()
+
+#254
+# class Human:
+#     def __init__(self):
+#         print("응애응애")
+#
+# areum = Human()
+
+#255
+# class Human:
+#     def __init__(self, 이름, 나이, 성별):
+#         self.이름 = 이름
+#         self.나이 = 나이
+#         self.성별 = 성별
+#
+# areum = Human("준호",26,"남자")
+
+#256
+# class Human:
+#     def __init__(self, 이름, 나이, 성별):
+#         self.이름 = 이름
+#         self.나이 = 나이
+#         self.성별 = 성별
+#
+# areum = Human("준호",26,"남자")
+# print(areum.이름, areum.나이, areum.성별)
+
+# 257
+# class Human:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#     def who(self):
+#         print("이름:", self.name, "나이:", self.age, "성별:", self.sex)
+#
+# a = Human("조아름", 25, "여자")
+# a.who()
+
+# 258
+# class Human:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#     def who(self):
+#         print("이름:{} 나이:{} 성별:{}" .format(self.name,self.age,self.sex))
+#     def setInfo(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#
+# junho = Human("불명", "미상", "모름")
+# junho.who()
+#
+# junho.setInfo("준호", 26, "남자")
+# junho.who()
+
+#259
+# class Human:
+#     def __init__(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#
+#     def __del__(self):
+#         print("나의 죽음을 알리지마라")
+#
+#     def who(self):
+#         print("이름:{} 나이:{} 성별:{}" .format(self.name,self.age,self.sex))
+#
+#     def setInfo(self, name, age, sex):
+#         self.name = name
+#         self.age = age
+#         self.sex = sex
+#
+# junho = Human("준호", 26, "남자")
+# del(junho)
+
+#260
+# class OMG :
+#     def print(self) :
+#         print("Oh my god")
+#
+# mystock = OMG()
+# mystock.print()
+
+#261~270
+#261
+# class Stock:
+#     pass
+
+#262
+# class Stock:
+#     def __init__(self, name, code):
+#         self.name = name
+#         self.code = code
+# 삼성 = Stock("삼성전자", "005930")
+# print(삼성.name)
+# print(삼성.code)
+
+#263
+# class Stock:
+#     def __init__(self, name, code):
+#         self.name = name
+#         self.code = code
+#     def set_name(self, name):
+#         self.name = name
+# a = Stock(None, None)
+# a.set_name("삼성전자")
+# print(a.name)
+
+#264
+# class Stock:
+#     def __init__(self, name, code):
+#         self.name = name
+#         self.code = code
+#     def set_name(self, name):
+#         self.name = name
+#     def set_code(self, code):
+#         self.code= code
+# a = Stock(None, None)
+# a.set_code("005930")
+# print(a.code)
+
+#265
+# class Stock:
+#     def __init__(self, name, code):
+#         self.name = name
+#         self.code = code
+#     def set_name(self, name):
+#         self.name = name
+#     def set_code(self, code):
+#         self.code= code
+#     def get_name(self):
+#         return self.name
+#     def get_code(self):
+#         return self.code
+#
+# 삼성 = Stock("삼성전자", "005930")
+# print(삼성.name)
+# print(삼성.code)
+# print(삼성.get_name())
+# print(삼성.get_code())
+
+#266
+# class Stock:
+#     def __init__(self, name, code, per, pbr, 배당수익률):
+#         self.name = name
+#         self.code = code
+#         self.per = per
+#         self.pbr = pbr
+#         self.배당수익률 = 배당수익률
+#     def set_name(self, name):
+#         self.name = name
+#     def set_code(self, code):
+#         self.code= code
+#     def get_name(self):
+#         return self.name
+#     def get_code(self):
+#         return self.code
+#267
+# a = Stock("삼성전자","005930",15.79, 1.33, 2.83)
+# print(a.배당수익률)
+
+#268
+# class Stock:
+#     def __init__(self, name, code, per, pbr, 배당수익률):
+#         self.name = name
+#         self.code = code
+#         self.per = per
+#         self.pbr = pbr
+#         self.배당수익률 = 배당수익률
+#
+#     def set_name(self, name):
+#         self.name = name
+#     def set_code(self, code):
+#         self.code= code
+#
+#     def get_name(self):
+#         return self.name
+#     def get_code(self):
+#         return self.code
+#
+#     def set_per(self, per):
+#         self.per = per
+#     def set_pbr(self, pbr):
+#         self.pbr= pbr
+#     def set_dividend(self, 배당수익률):
+#         self.배당수익률= 배당수익률
+#
+# #269
+# a = Stock("삼성전자","005930",15.79, 1.33, 2.83)
+# a.set_per(12.75)
+# print(a.per)
+#
+# #270
+# 삼성 = Stock("삼성전자", "005930", 15.79, 1.33, 2.83)
+# 현대 = Stock("현대차","005380", 8.70, 0.35,4.27)
+# LG = Stock("LG전자", "066570", 317.34, 0.69, 1.37)
+#
+# a = [삼성, 현대, LG]
+# for i in a:
+#     print(i.code)
+#     print(i.per)
+
+#271~280
+#271
+class Account:
+    def __init__(self, name, money):
+        self.name = name
+        self.money = money
+
+
+        self.bank = bank
+        self.number = number
+
