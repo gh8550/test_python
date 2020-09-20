@@ -2,6 +2,7 @@ f = open("C:/Users/gh855/OneDrive/바탕 화면/Git/test_python/Crawler/Crawler_
 lines = f.readlines()
 print(lines)
 
-# for i in lines:
-#     print(i.['p'])
-#     f.close()
+for i in lines:
+    if "p" in i:
+        print(i)
+    f.close()
