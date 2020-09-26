@@ -11,19 +11,11 @@ tag = False
 #         tag = True
 
 for i in lines:
-    if i.strip() == '</title>':
+    if i.strip() == '</title>' or i.strip() == '</h1>':
         tag = False
     if tag:
         print(i.strip())
-    if i.strip() == '<title>':
-        tag = True
-
-for i in lines:
-    if i.strip() == '</h1>':
-        tag = False
-    if tag:
-        print(i.strip())
-    if i.strip() == '<h1>':
+    if i.strip() == '<title>' or i.strip() == '<h1>':
         tag = True
 
 f.close()

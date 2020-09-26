@@ -1404,12 +1404,12 @@
 
 #271~280
 #271
-class Account:
-    def __init__(self, name, money):
-        self.name = name
-        self.money = money
-
-
-        self.bank = bank
-        self.number = number
+# class Account:
+#     def __init__(self, name, money):
+#         self.name = name
+#         self.money = money
+#
+#
+#         self.bank = bank
+#         self.number = number
 
